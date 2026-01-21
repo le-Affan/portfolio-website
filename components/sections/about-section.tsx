@@ -32,7 +32,7 @@ export function AboutSection() {
       {/* Profile Section */}
       <div className="border-2 border-pixel-cyan p-4 text-center">
         <div className="w-24 h-24 mx-auto mb-4 border-2 border-pixel-cyan bg-pixel-purple/20 flex items-center justify-center">
-          <img src="/profile.jpg" alt="Affan profile" className="w-full h-full object-cover" />
+          <img src="/profile.jpeg" alt="Affan profile" className="w-24 h-24 object-cover" />
         </div>
         <h2 className="text-lg font-bold text-pixel-cyan mb-1">Affan Shaikh</h2>
         <p className="text-sm text-pixel-pink mb-2">Software Developer</p>

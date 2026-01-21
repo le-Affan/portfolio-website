@@ -10,9 +10,11 @@ interface Experience {
 const experiences: Experience[] = [
   {
     company: 'Makeflow',
-    role: 'ML Intern',
+    role: 'ML Engineer Intern ',
     duration: 'Dec 2025 - Present',
-    achievements: ['Led team of 5', 'Increased performance by 40%', 'Architected microservices'],
+    achievements: ['Designed and implemented an adaptive persuasion system for donation-oriented conversational AI using multi-turn dialogue control', 
+      'Implemented modular persuasion strategies with dynamic escalation and trust-recovery behavior across individual dialogues.', 
+      'Integrated the persuasion controller with a LLaMA-3.1–based language model, enforcing controlled response generation through system-level logic.'],
   },
   {
     company: 'StartUp Inc',
