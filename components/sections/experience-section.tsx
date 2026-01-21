@@ -13,7 +13,7 @@ interface Experience {
 const experiences: Experience[] = [
   {
     company: 'Makeflow',
-    role: 'ML Engineer Intern ',
+    role: 'ML Engineer Intern',
     duration: 'Dec 2025 - Present',
     achievements: ['Designed and implemented an adaptive persuasion system for donation-oriented conversational AI using multi-turn dialogue control', 
       'Implemented modular persuasion strategies with dynamic escalation and trust-recovery behavior across individual dialogues.', 
@@ -21,11 +21,25 @@ const experiences: Experience[] = [
   },
   {
     company: 'KIAAR',
-    role: 'ML & GIS Intern ',
-    duration: '2020 - 2022',
+    role: 'ML & GIS Intern',
+    duration: 'Sep. 2025 - Present',
     achievements: ['Designed an automated GIS pipeline to generate soil salinity maps over 2.5+ sq. km using multispectral satellite imagery', 
       'Extracted spectral features and validated predictions against field-measured EC and SAR ground truth.', 
       'Produced geospatial outputs adopted by researchers for soil assessment and reporting.'],
+  },
+  {
+    company: 'KJSCE Insignia',
+    role: 'Creative Head',
+    duration: 'June 2024 - June 2025',
+    achievements: ['Led and scaled a creative team of 50+ members, managing the design and execution of 20+ large-scale installations for college-wide events.', 
+      'Managed an annual operating budget, optimizing material procurement and delivering all projects on time.'],
+  },
+  {
+    company: 'KJSCE Insignia',
+    role: 'Joint Creative Head ',
+    duration: 'Oct 2023 - June 2024',
+    achievements: ['Co-led a design division of 50+ members, assisting in planning and project execution for all college-wide events.', 
+      'Directly managed the execution of 10+ major installations, earning a promotion to Creative Head.'],
   },
 ]
 
