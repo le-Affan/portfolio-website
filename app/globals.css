@@ -1,0 +1,277 @@
+@import 'tailwindcss';
+
+:root {
+  /* Cyberpunk Vaporwave color palette */
+  --monitor: #0a0e1a;
+  --monitor-text: #f0f0f5;
+  --monitor-border: #1a1f3a;
+  --pixel-purple: #7d00ff;
+  --pixel-pink: #ff006e;
+  --pixel-cyan: #00d9ff;
+  --pixel-yellow: #ff8c00;
+  --pixel-green: #00ff88;
+  --pixel-red: #ff0055;
+
+  /* Shadcn/ui defaults - overwritten by user's specific colors below */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.25rem; /* User's radius */
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+
+  /* User's specific colors (taking precedence) */
+  --background: #0a0e1a;
+  --foreground: #f0f0f5;
+  --card: #0f1428;
+  --card-foreground: #f0f0f5;
+  --popover: #0f1428;
+  --popover-foreground: #f0f0f5;
+  --primary: #7d00ff;
+  --primary-foreground: #f0f0f5;
+  --secondary: #ff006e;
+  --secondary-foreground: #0a0e1a;
+  --muted: #1a1f3a;
+  --muted-foreground: #a0a0b0;
+  --accent: #00d9ff;
+  --accent-foreground: #0a0e1a;
+  --destructive: #ff0055;
+  --destructive-foreground: #f0f0f5;
+  --border: #1a1f3a;
+  --input: #0f1428;
+  --ring: #00d9ff;
+  --chart-1: #ff006e;
+  --chart-2: #7d00ff;
+  --chart-3: #00d9ff;
+  --chart-4: #ff8c00;
+  --chart-5: #00ff88;
+  --sidebar: #0a0e1a;
+  --sidebar-foreground: #f0f0f5;
+  --sidebar-primary: #7d00ff;
+  --sidebar-primary-foreground: #f0f0f5;
+  --sidebar-accent: #00d9ff;
+  --sidebar-accent-foreground: #0a0e1a;
+  --sidebar-border: #1a1f3a;
+  --sidebar-ring: #00d9ff;
+}
+
+.dark {
+  /* Shadcn/ui defaults - overwritten by user's specific colors below */
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+
+  /* User's specific colors (taking precedence) */
+  --monitor: #0a0e1a;
+  --monitor-text: #f0f0f5;
+  --monitor-border: #1a1f3a;
+  --pixel-purple: #7d00ff;
+  --pixel-pink: #ff006e;
+  --pixel-cyan: #00d9ff;
+  --pixel-yellow: #ff8c00;
+  --pixel-green: #00ff88;
+  --pixel-red: #ff0055;
+}
+
+@theme inline {
+  --font-sans: 'Press Start 2P', cursive;
+  --font-mono: 'Press Start 2P', cursive;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-monitor: var(--monitor);
+  --color-monitor-text: var(--monitor-text);
+  --color-monitor-border: var(--monitor-border);
+  --color-pixel-purple: var(--pixel-purple);
+  --color-pixel-pink: var(--pixel-pink);
+  --color-pixel-cyan: var(--pixel-cyan);
+  --color-pixel-yellow: var(--pixel-yellow);
+  --color-pixel-green: var(--pixel-green);
+  --color-pixel-red: var(--pixel-red);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground; /* Changed from bg-monitor text-monitor-text to use standard shadcn/ui variables */
+    background-image: url(/space-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+  html {
+    image-rendering: pixelated;
+  }
+}
+
+/* CRT Monitor effect - sharp pixelated borders */
+@layer components {
+  .monitor-frame {
+    @apply relative bg-black shadow-2xl overflow-hidden;
+    border: 8px solid #4a4a6a;
+    box-shadow:
+      0 0 60px rgba(0, 217, 255, 0.4),
+      inset 0 0 20px rgba(0, 0, 0, 0.9),
+      0 0 0 4px #1a1a2e;
+    image-rendering: pixelated;
+  }
+
+  .monitor-screen {
+    @apply relative bg-monitor overflow-hidden;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0px,
+        rgba(0, 0, 0, 0.2) 2px,
+        transparent 2px,
+        transparent 4px
+      );
+  }
+
+  .pixel-icon {
+    @apply relative cursor-pointer transition-all duration-150 hover:scale-125 active:scale-95;
+    filter: drop-shadow(0 0 12px rgba(0, 217, 255, 0.6)) drop-shadow(0 0 4px rgba(255, 107, 157, 0.4));
+    image-rendering: pixelated;
+  }
+
+  .pixel-icon-wrapper {
+    @apply flex flex-col items-center gap-2 p-4 hover:bg-pixel-purple/30 transition-colors;
+    border: 3px solid #00d9ff;
+    box-shadow: 0 0 16px rgba(0, 217, 255, 0.5), inset 0 0 0 2px rgba(255, 107, 157, 0.3);
+  }
+
+  .pixel-button {
+    @apply px-4 py-3 text-xs font-bold transition-all border-4;
+    border-color: #00d9ff;
+    background-color: #6a4c93;
+    color: #e0e0e0;
+    box-shadow: inset 0 0 0 1px #ff6b9d, 0 4px 0 #1a1a2e;
+  }
+
+  .pixel-button:hover {
+    @apply translate-y-0;
+    background-color: #ff6b9d;
+    box-shadow: inset 0 0 0 1px #00d9ff, 0 6px 0 #1a1a2e;
+  }
+
+  .pixel-button:active {
+    @apply translate-y-1;
+    box-shadow: inset 0 0 0 1px #00d9ff, 0 2px 0 #1a1a2e;
+  }
+
+  .pixel-window {
+    @apply absolute bg-card shadow-2xl;
+    border: 4px solid #4a4a6a;
+    box-shadow:
+      0 0 30px rgba(255, 107, 157, 0.5),
+      inset -3px -3px 0 rgba(255, 255, 255, 0.15),
+      inset 3px 3px 0 rgba(0, 0, 0, 0.7);
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15) 0px,
+        rgba(0, 0, 0, 0.15) 2px,
+        transparent 2px,
+        transparent 4px
+      );
+  }
+
+  .pixel-window-title {
+    @apply bg-pixel-purple text-monitor-text px-4 py-2 text-xs font-bold border-b-4 border-monitor-border flex items-center justify-between;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+  }
+}
