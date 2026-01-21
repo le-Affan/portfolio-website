@@ -17,16 +17,12 @@ const experiences: Experience[] = [
       'Integrated the persuasion controller with a LLaMA-3.1–based language model, enforcing controlled response generation through system-level logic.'],
   },
   {
-    company: 'StartUp Inc',
-    role: 'Full Stack Developer',
+    company: 'KIAAR',
+    role: 'ML & GIS Intern ',
     duration: '2020 - 2022',
-    achievements: ['Built MVP', 'Secured Series A', 'Scaled to 100k users'],
-  },
-  {
-    company: 'Web Agency',
-    role: 'Junior Developer',
-    duration: '2019 - 2020',
-    achievements: ['Shipped 15+ projects', 'Client satisfaction 100%', 'Learned best practices'],
+    achievements: ['Designed an automated GIS pipeline to generate soil salinity maps over 2.5+ sq. km using multispectral satellite imagery', 
+      'Extracted spectral features and validated predictions against field-measured EC and SAR ground truth.', 
+      'Produced geospatial outputs adopted by researchers for soil assessment and reporting.'],
   },
 ]
 
