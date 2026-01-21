@@ -25,7 +25,7 @@ export function AboutSection() {
     { label: 'WhatsApp', icon: '📱', placeholder: '+91 9167870478' },
     { label: 'LeetCode', icon: '⚡', placeholder: 'https://leetcode.com/u/le-Affan/', display: 'le-Affan' },
     { label: 'Email', icon: '✉️', placeholder: 'shaikhaffan.work@gmail.com' },
-    { label: 'Resume', icon: '📄', placeholder: 'https://drive.google.com/file/d/1DM1UDZZDRQXRCIuMAzvtCCoKiFhusFAA/view?usp=sharing' },
+    { label: 'Resume', icon: '📄', placeholder: 'https://drive.google.com/file/d/16vHzcpnhJ3RzW-YEw4ZYxZ6qRhPbqWH4/view?usp=sharing' },
   ]
 
   return (
