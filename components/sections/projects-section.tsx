@@ -37,6 +37,55 @@ const projects: Project[] = [
       'Integrated OCR and document parsing to support image and PDF-based inputs with consistent downstream processing.',
     ],
   },
+  {
+    name: 'Regression Pipeline',
+    description: 'Reusable end-to-end regression pipeline.',
+    tech: 'Python, Pandas, NumPy, Scikit-learn',
+    githubLink: 'https://github.com/le-Affan/regression-pipeline', // replace if different
+    projectLink: '#',
+    aboutPoints: [
+      'Built a clean regression pipeline from scratch modeled on the Calafornia Housing dataset',
+      'Implemented and compared baseline, Linear Regression, Ridge Regression, and Decision Tree models with proper scaling and diagnostics.',
+      'Used cross-validation to control model complexity and select hyperparameters, achieving strong generalization on unseen test data.'
+    ],
+  },
+  {
+    name: 'Churn Predictor',
+    description: 'Reusable end-to-end classification pipeline',
+    tech: 'Python, Pandas, NumPy, Scikit-learn',
+    githubLink: 'https://github.com/le-Affan/telco-customer-churn-predictor', // replace if different
+    projectLink: '#',
+    aboutPoints: [
+      'Built a complete classification pipeline on telecom dataset.',
+      'Handled mixed numerical and categorical features through proper preprocessing, baseline modeling, and iterative capacity increases.',
+      'Performed disciplined evaluation and error analysis, and shipped a minimal inference-ready ML system.'
+    ],
+  },
+  {
+    name: 'Crypto Sandbox',
+    description: 'GitHub collaborator recommendation system',
+    tech: 'Python, python-binance',
+    githubLink: 'https://github.com/le-Affan/binance-bot', // Placeholder - add your link
+    projectLink: '#', // Placeholder - add your link
+    aboutPoints: [
+      'Built an interactive crypto trading bot supporting real Binance Spot Testnet trading and mock Futures simulations.',
+      'Implemented multiple order types including Market, Limit, Stop-Limit, and OCO with proper input validation and error handling.',
+      'Designed a modular architecture with secure API key management, detailed logging, and a switchable Spot/Futures execution layer for safe experimentation.'
+    ],
+  },
+  {
+    name: 'OutlineX',
+    description: 'Heading extractor for PDF files.',
+    tech: 'Python, pdfplumber, Docker',
+    githubLink: 'https://github.com/le-Affan/pdf-outline-extractor', // Placeholder - add your link
+    projectLink: '#', // Placeholder - add your link
+    aboutPoints: [
+      'Built a PDF processing pipeline to extract document titles and hierarchical headings with page numbers for Adobe Connect The Dots Hackathon 2025.',
+      'Designed rule-based classification using font size analysis, formatting cues, and regex patterns to detect structured sections.',
+      'Optimized for performance and constraints by processing up to 50-page PDFs under 10 seconds using sequential page handling and Dockerized execution.'
+    ],
+  },
+  
 ]
 
 export function ProjectsSection() {
