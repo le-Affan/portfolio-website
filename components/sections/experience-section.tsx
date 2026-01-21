@@ -1,5 +1,8 @@
 'use client'
 
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+
 interface Experience {
   company: string
   role: string
@@ -27,22 +30,79 @@ const experiences: Experience[] = [
 ]
 
 export function ExperienceSection() {
+  const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null)
+
   return (
-    <div className="p-4 space-y-3 max-h-96 overflow-y-auto">
-      {experiences.map((exp, idx) => (
-        <div key={idx} className="border-2 border-pixel-yellow p-3 bg-pixel-purple/10">
-          <div className="flex justify-between items-start mb-1">
-            <h3 className="text-xs font-bold text-pixel-yellow">{exp.company}</h3>
-            <span className="text-xs text-muted-foreground">{exp.duration}</span>
-          </div>
-          <p className="text-xs text-pixel-pink mb-2">{exp.role}</p>
-          <div className="text-xs text-monitor-text ml-2 space-y-1">
-            {exp.achievements.map((achievement, i) => (
-              <p key={i} className="text-pixel-cyan">◆ {achievement}</p>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="p-4 space-y-3 max-h-96 overflow-y-auto">
+        {experiences.map((exp, idx) => (
+          <motion.button
+            key={idx}
+            onClick={() => setSelectedExperience(exp)}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="w-full text-left border-2 border-pixel-yellow p-3 bg-pixel-purple/10 hover:bg-pixel-purple/20 transition-colors cursor-pointer"
+          >
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-xs text-pixel-yellow">►</span>
+              <h3 className="text-xs font-bold text-pixel-yellow">{exp.company}</h3>
+            </div>
+            <p className="text-xs text-pixel-pink ml-3">{exp.role}</p>
+          </motion.button>
+        ))}
+      </div>
+
+      {/* Experience Detail Modal */}
+      <AnimatePresence>
+        {selectedExperience && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedExperience(null)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+              className="w-full max-w-2xl border-4 border-pixel-purple bg-card p-6"
+              style={{ boxShadow: '0 0 30px rgba(216,74,106,0.3)' }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Header */}
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h2 className="text-lg font-bold text-pixel-yellow mb-1" style={{ textShadow: '2px 2px 0 rgba(0,0,0,0.8)' }}>
+                    {selectedExperience.company}
+                  </h2>
+                  <p className="text-xs text-pixel-pink mb-1">{selectedExperience.role}</p>
+                  <p className="text-xs text-monitor-text/80">{selectedExperience.duration}</p>
+                </div>
+                <button
+                  onClick={() => setSelectedExperience(null)}
+                  className="text-pixel-pink hover:text-pixel-cyan transition-colors text-2xl leading-none"
+                >
+                  ✕
+                </button>
+              </div>
+
+              {/* Achievements Section */}
+              <div className="border-2 border-pixel-cyan p-3">
+                <h3 className="text-xs font-bold text-pixel-cyan mb-2">ACHIEVEMENTS</h3>
+                <div className="space-y-1">
+                  {selectedExperience.achievements.map((achievement, idx) => (
+                    <p key={idx} className="text-xs text-monitor-text">
+                      ◆ {achievement}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   )
 }
