@@ -14,6 +14,18 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "Prompt Lab",
+    description: "Platform for LLM prompt experimentation.",
+    tech: "Python, FastAPI, PostgreSQL, Redis, Docker",
+    githubLink: "https://github.com/le-Affan/prompt-lab", // Placeholder - add your link
+    projectLink: "#", // Placeholder - add your link
+    aboutPoints: [
+      "Designed a version-controlled prompt system with branching, rollback, and diffing to manage prompt evolution in an iterative development workflow.",
+      "Enabled parallel experimentation across multiple prompt variants and model configurations for consistent comparison.",
+      "Built a template-based system to evaluate multiple prompt variations by testing different combinations of inputs.",
+    ],
+  },
+  {
     name: "Krisis",
     description: "A/B Testing System for ML Models",
     tech: "Python, FastAPI, REST API, Supabase, PostgreSQL",
