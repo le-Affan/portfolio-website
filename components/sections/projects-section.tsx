@@ -14,18 +14,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Prompt Lab",
-    description: "Platform for LLM prompt experimentation.",
-    tech: "Python, FastAPI, PostgreSQL, Redis, Docker",
-    githubLink: "https://github.com/le-Affan/prompt-lab", // Placeholder - add your link
-    projectLink: "#", // Placeholder - add your link
-    aboutPoints: [
-      "Designed a version-controlled prompt system with branching, rollback, and diffing to manage prompt evolution in an iterative development workflow.",
-      "Enabled parallel experimentation across multiple prompt variants and model configurations for consistent comparison.",
-      "Built a template-based system to evaluate multiple prompt variations by testing different combinations of inputs.",
-    ],
-  },
-  {
     name: "Krisis",
     description: "A/B Testing System for ML Models",
     tech: "Python, FastAPI, REST API, Supabase, PostgreSQL",
@@ -38,12 +26,24 @@ const projects: Project[] = [
     ],
   },
   {
+    name: "Prompt Lab",
+    description: "Platform for LLM prompt experimentation.",
+    tech: "Python, FastAPI, PostgreSQL, Redis, Docker",
+    githubLink: "https://github.com/le-Affan/prompt-lab", // Placeholder - add your link
+    // projectLink: "#", // Placeholder - add your link
+    aboutPoints: [
+      "Designed a version-controlled prompt system with branching, rollback, and diffing to manage prompt evolution in an iterative development workflow.",
+      "Enabled parallel experimentation across multiple prompt variants and model configurations for consistent comparison.",
+      "Built a template-based system to evaluate multiple prompt variations by testing different combinations of inputs.",
+    ],
+  },
+  {
     name: "GitConnect",
     description: "GitHub collaborator recommendation system",
     tech: "Python, Scikit-Learn, Pandas, NumPy",
     githubLink:
       "https://github.com/le-Affan/github-collaborator-recommendation-system", // Placeholder - add your link
-    projectLink: "#", // Placeholder - add your link
+    // projectLink: "#", // Placeholder - add your link
     aboutPoints: [
       "Built a content-based recommendation system to suggest potential GitHub collaborators based on developer similarity across repositories.",
       "Modeled 1,200+ GitHub developers by aggregating repository text, topic tags, and activity metrics into unified developer representations.",
@@ -55,7 +55,7 @@ const projects: Project[] = [
     description: "Multi-modal data analysis agent",
     tech: "Python, LLaMA-4 Maverick, Tesseract",
     githubLink: "https://github.com/le-Affan/Data-Analyst-Agent", // Placeholder - add your link
-    projectLink: "#", // Placeholder - add your link
+    // projectLink: "#", // Placeholder - add your link
     aboutPoints: [
       "Built a multi-modal data analysis agent that answers queries over structured and unstructured files through a single interface.",
       "Designed a modular ingestion and processing pipeline to automatically route files to appropriate analysis, EDA, and visualization workflows.",
@@ -67,7 +67,7 @@ const projects: Project[] = [
     description: "Reusable end-to-end regression pipeline.",
     tech: "Python, Pandas, NumPy, Scikit-learn",
     githubLink: "https://github.com/le-Affan/regression-pipeline", // replace if different
-    projectLink: "#",
+    // projectLink: "#",
     aboutPoints: [
       "Built a clean regression pipeline from scratch modeled on the Calafornia Housing dataset",
       "Implemented and compared baseline, Linear Regression, Ridge Regression, and Decision Tree models with proper scaling and diagnostics.",
@@ -79,7 +79,7 @@ const projects: Project[] = [
     description: "Reusable end-to-end classification pipeline",
     tech: "Python, Pandas, NumPy, Scikit-learn",
     githubLink: "https://github.com/le-Affan/telco-customer-churn-predictor", // replace if different
-    projectLink: "#",
+    // projectLink: "#",
     aboutPoints: [
       "Built a complete classification pipeline on telecom dataset.",
       "Handled mixed numerical and categorical features through proper preprocessing, baseline modeling, and iterative capacity increases.",
@@ -91,7 +91,7 @@ const projects: Project[] = [
     description: "GitHub collaborator recommendation system",
     tech: "Python, python-binance",
     githubLink: "https://github.com/le-Affan/binance-bot", // Placeholder - add your link
-    projectLink: "#", // Placeholder - add your link
+    // projectLink: "#", // Placeholder - add your link
     aboutPoints: [
       "Built an interactive crypto trading bot supporting real Binance Spot Testnet trading and mock Futures simulations.",
       "Implemented multiple order types including Market, Limit, Stop-Limit, and OCO with proper input validation and error handling.",
@@ -103,7 +103,7 @@ const projects: Project[] = [
     description: "Heading extractor for PDF files.",
     tech: "Python, pdfplumber, Docker",
     githubLink: "https://github.com/le-Affan/pdf-outline-extractor", // Placeholder - add your link
-    projectLink: "#", // Placeholder - add your link
+    // projectLink: "#", // Placeholder - add your link
     aboutPoints: [
       "Built a PDF processing pipeline to extract document titles and hierarchical headings with page numbers for Adobe Connect The Dots Hackathon 2025.",
       "Designed rule-based classification using font size analysis, formatting cues, and regex patterns to detect structured sections.",
