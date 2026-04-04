@@ -30,7 +30,7 @@ const projects: Project[] = [
     description: "A/B Testing System for ML Models",
     tech: "Python, FastAPI, REST API, Supabase, PostgreSQL",
     githubLink: "https://github.com/le-Affan/krisis", // Placeholder - add your link
-    projectLink: "#", // Placeholder - add your link
+    projectLink: "https://try-krisis.vercel.app/",
     aboutPoints: [
       "Built a complete A/B testing system for comparing machine learning models using real traffic and delayed outcomes.",
       "Implemented configurable experiment setup with traffic splitting and persistent tracking of requests and outcomes.",
