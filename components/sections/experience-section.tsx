@@ -13,7 +13,7 @@ interface Experience {
 const experiences: Experience[] = [
   {
     company: "Futwork",
-    role: "ML Engineer Intern",
+    role: "SDE Intern",
     duration: "Dec 2025 - Present",
     achievements: [
       "Designed and implemented an adaptive persuasion system for donation-oriented conversational AI using multi-turn dialogue control",
