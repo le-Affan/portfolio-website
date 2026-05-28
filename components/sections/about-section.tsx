@@ -44,7 +44,7 @@ export function AboutSection() {
       label: "Resume",
       icon: "📄",
       placeholder:
-        "https://drive.google.com/file/d/1tgJ40FTXThuVxa2AQSxVojEaDvNUia4E/view?usp=sharing",
+        "https://drive.google.com/file/d/1u8J7-gcJ3mY3v9mDrRo1Qb_BaePpp5vq/view?usp=drive_link",
     },
   ];
 
